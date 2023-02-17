@@ -9,7 +9,7 @@ int main(void)
 {
 	char c;
 
-	c = 'n'
+	c = 'n';
 	while
 		(c <= 'z') {
 			putcher(c);
