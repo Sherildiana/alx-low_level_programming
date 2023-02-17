@@ -12,9 +12,9 @@ int main(void)
 	c = 'n';
 	while
 		(c <= 'z') {
-			putcher(c);
+			putchar(c);
 			c++;
 		}
-	putcher('\n');
+	putchar('\n');
 	return (0);
 }
