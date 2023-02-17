@@ -1,10 +1,10 @@
-#include <stdstring>
+#include <inistd.h>
 /**
  * main - c program that prints a line to the standard error
- * Return 1 (success)
+ * Return: returns 1
  */
 int main(void)
 {
-	write("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 61);
-Return:return 1
+	write(2,"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	return (1);
 }
