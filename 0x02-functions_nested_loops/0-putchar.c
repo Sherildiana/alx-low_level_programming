@@ -1,11 +1,12 @@
-#include <string>
+#include "main.h"
+#include <unistd.h>
+
 /**
- * main - program that prints _putchar
+ * _putchar - writes the character to c stdout
  *
- * Return: Always 0 (Success)
+ * Return: on Success
  */
-int main(void)
+int _putchar(char c)
 {
-	printf_putchar;
-	return (0);
+	return (write(1, &c, 1));
 }
