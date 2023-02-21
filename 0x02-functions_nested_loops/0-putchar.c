@@ -1,19 +1,12 @@
-#include "putchar.h"
+#include "unistd.h"
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ * Return: Always 1 (Success)
+ * on error, 1 is returned, and errno is set approximately
  */
-int main(void)
+int _putchar(char c)
 {
-	char *sh = "putchar";
 
-	while (*sh)
-	{
-		_putchar(*sh);
-		sh++;
-	}
-	_putchar('\n');
-
-	return (0);
+	return (write(1, &c, 1));
 }
