@@ -4,6 +4,7 @@
  * main - Test funtion for positive or negative
  * Return: 0
  */
+
 int main(void)
 {
 	int i;
