@@ -1,27 +1,27 @@
 #include "main.h"
+#include "2-strlen.c"
 
 /**
- * print_rev - imprime en reversa
- * @s: string
- * return: 0
+ * print_rev - function declaration
+ * @s: string pointer
+ * Return: void
+ */
+
+void print_rev(char *s);
+
+/**
+ * print_rev - function definition
+ * @s: the string pointer
+ * Return: void
  */
 
 void print_rev(char *s)
 {
-	int longi = 0;
-	int o;
+	int index;
 
-	while (*s != '\0')
+	for (index = _strlen(s) - 1; index >= 0; index--)
 	{
-		longi++;
-		s++;
+		_putchar(*(s + index));
 	}
-	s--;
-	for (o = longi; o > 0; o--)
-	{
-		_putchar(*s);
-		s--;
-	}
-
 	_putchar('\n');
 }
